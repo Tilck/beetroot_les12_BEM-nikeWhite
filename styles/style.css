@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clear-fix:after, .clear-fix:before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+.container {
+    width: 870px;
+    height: 70vh;
+    margin: 10% auto;
+    background-image: url("../img/bg_t.png");
+    padding: 0 60px;
+    z-index: -2;
+    position: relative;
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.header__logo {float: left}
+
+.main-menu__list {
+    font-size: 12px;
+    list-style-type: none;
+    color: #fff;
+    font-family: "Roboto Light", sans-serif;
+}
+
+.main-menu__list, .main-menu__burger {float: right}
+
+.main-menu__item {
+    display: inline-block;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+.main-menu__item--active {
+    border-bottom: 2px solid;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-color: #f4f4f4;
+}
+
+.card:before, .card:after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.card:before {
+    width: 105%;
+    height: 95%;
+    right: -2.5%;
+    top: 2.5%;
+}
+
+.card:after {
+    width: 110%;
+    height: 90%;
+    right: -5%;
+    top: 5%;
+}
+
+.card__image, .card__info {
+    float: left;
+    height: 100%;
+}
+
+.card__image {
+    width: calc(100%/3*2);
+    text-align: center;
+}
+
+.image__main {
+    display: block;
+    margin: 0 auto;
+}
+
+.image__add {
+    font-size: 40px;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.image__short-img {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.image__short-img:last-child {padding-right: 0}
+
+.image__short-img img {vertical-align: top;}
+
+.card__info {
+    background-color: #fff;
+    width: calc(100%/3);
+}
